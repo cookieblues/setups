@@ -60,4 +60,4 @@
     },
 ]
 ```
-12. Install [uv](https://docs.astral.sh/uv/): `curl -LsSf https://astral.sh/uv/install.sh | sh`.
+12. Install [uv](https://docs.astral.sh/uv/): `sudo pacman -S uv`.
