@@ -13,58 +13,10 @@
     "terminal.integrated.fontFamily": "MesloLGS NF",
 }
 ```
-8. Press ctrl+shift+p to open Command Palette in vscode, then search for "Preferences: Open Keyboard Shortcuts (JSON)" and add the following keybindings:
-```
-[
-    {
-        "key": "ctrl+tab",
-        "command": "workbench.action.nextEditor",
-    },
-    {
-        "key": "ctrl+shift+tab",
-        "command": "workbench.action.previousEditor",
-    },
-    {
-        "key": "cmd+.",
-        "command": "workbench.action.terminal.focus",
-    },
-    {
-        "key": "cmd+.",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+up",
-        "command": "cursorMove",
-        "args": {
-            "to": "up",
-            "by": "line",
-            "value": 10,
-        },
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+down",
-        "command": "cursorMove",
-        "args": {
-            "to": "down",
-            "by": "line",
-            "value": 10,
-        },
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+=",
-        "command": "editor.action.fontZoomIn",
-    },
-    {
-        "key": "cmd+-",
-        "command": "editor.action.fontZoomOut",
-    },
-]
-```
+8. Press ctrl+shift+p to open Command Palette in vscode, then search for "Preferences: Open Keyboard Shortcuts (JSON)" and add the keybindings from `vscode_keybinds.json` in this repo.
+9. Install uv.
 
-# Setup pyenv, pipx, and poetry (if not using uv)
+# If you need to setup pyenv, pipx, and poetry (if not using uv)
 1. Install pyenv with brew and add `eval "$*(pyenv init --path)"` to your `.zshrc` (or whatever shell config) file.
 2. Install at least one Python version from pyenv, e.g. `pyenv install 3.11.9`.
 3. Potentially use an internal package place like Artifactory. Set up here.
