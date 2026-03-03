@@ -1,7 +1,7 @@
 # First to-dos
 1. Run `sudo pacman -Syu` to update all packages.
 2. Generate ssh keys for git with `ssh-keygen -t rsa`.
-3. Install vscode with `sudo pacman -S code`.
+3. Install [vscode](https://aur.archlinux.org/packages/visual-studio-code-bin) from AUR. Clone and then run `makepkg -si` (might require to `sudo pacman -S base-devel`).
 4. Uninstall everything zsh related from manjaro. Try `sudo pacman -Rs zsh` and then remove everything dependent.
 5. Install zsh again with `pacman -S zsh`.
 6. [Change default shell](https://wiki.archlinux.org/title/Command-line_shell#Changing_your_default_shell) to be zsh. Restart or relog to take effect.
